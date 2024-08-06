@@ -10,6 +10,10 @@ fun main() {
         println("Digite o movimento (Siga em frente, Gire 90 graus à Direita ou Gire 90 graus à Esquerda):")
         val movimento = readln()
 
+       if(posicaoPersonagemY < 0 || posicaoPersonagemX < 0){
+        println("Você está fora do labrinto. Volte ao labirito")
+}
+        
         when (movimento) {
             "Siga em frente" -> {
                 when (direcao) {
